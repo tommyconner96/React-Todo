@@ -73,20 +73,29 @@ clearComplete = (e) => {
   })
 }
 
+handleChanges = (e) => {
+  this.setState({ [e.target.name]: e.target.value })
+  console.log(this.state.item)
+}
+
   render() {
     return (
       <div className="App">
-        <h2>Welcome to your Todo App!</h2>
+        <h2>Todo List!</h2>
+        <h3>Add tasks in the box below. Click them to cross them off the list. 
+          Hit the Clear Completed button to remove completed items.</h3>
         <div className="Form">
             <TodoForm 
             addItem={this.addItem}
+            handleChanges={this.handleChanges}
+            clearComplete={this.clearComplete}
             />
           </div>
           <div className="List">
             <TodoList
             todos={this.state.todos}
             toggleItem={this.toggleItem}
-            clearComplete={this.clearComplete}
+
             />
           </div>
       </div>

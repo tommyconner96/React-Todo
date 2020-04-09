@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 class TodoForm extends React.Component {
     //constructor
     constructor() {
@@ -32,9 +33,15 @@ class TodoForm extends React.Component {
                 value={this.state.item}
                 onChange={this.handleChanges}
                  />
-                <button>Add</button>
+                <div className='button-container'>
+                    <button className='add-button'>Add</button>
                 {/* <button>Clear Completed</button> */}
+                    <button className="clear-complete" onClick={this.props.clearComplete}>
+                        Clear Completed
+                    </button>
+                </div>
             </form>
+            
             )
     }
 }

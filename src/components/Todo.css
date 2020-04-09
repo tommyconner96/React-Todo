@@ -1,13 +1,66 @@
+body {
+    background-color: #FCF5C7;
+}
 .App {
-background-color: green;
-width: 80%;
+background-color: #79ADDC;
+width: 400px;
 margin: 0 auto;
 padding: 5%;
 border-radius: 2em;
 }
-.item {
-    background-color: red;
+
+h2 {
+    text-align: center;
 }
+
+h3 {
+    text-align: center;
+}
+
+.Form {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.add-button {
+    border-radius: 1em;
+    background-color: #ADF7B6;
+    color:black;
+    width: 100px;
+    height: 40px;
+}
+.Form input {
+    height: 40px;
+    border-radius: 1em;
+}
+
+.List {
+    margin: 0 auto;
+    text-align: center;
+}
+.item {
+    background-color: #FFEE93;
+    width: fit-content;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 2em;
+}
+
 .item.completed {
     text-decoration: line-through;
+}
+
+.clear-complete {
+    border-radius: 1em;
+    background-color: #FFC09F;
+    color:black;
+    width: 140px;
+    height: 40px;
+}
+
+.button-container {
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
