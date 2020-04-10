@@ -31,10 +31,13 @@ class TodoForm extends React.Component {
                 type='text'
                 name='item'
                 value={this.state.item}
+                placeholder='Type Tasks Here!'
                 onChange={this.handleChanges}
                  />
                 <div className='button-container'>
-                    <button className='add-button'>Add</button>
+                    <button className='add-button'>
+                        Add
+                    </button>
                 {/* <button>Clear Completed</button> */}
                     <button className="clear-complete" onClick={this.props.clearComplete}>
                         Clear Completed
